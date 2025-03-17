@@ -22,7 +22,7 @@ revenue_increase_pct = ((new_revenue - current_revenue) / current_revenue) * 100
 fig = go.Figure(go.Indicator(
     mode="gauge+number+delta",
     value=new_revenue,
-    delta={'reference': current_revenue, 'relative': True, 'valueformat':'.0%', 'increasing':{'color':'green'}},
+    delta={'reference': current_revenue, 'relative': True, 'valueformat': '.0%', 'increasing': {'color': 'green'}},
     gauge={
         'axis': {'range': [None, max(new_revenue*1.2, current_revenue*2)]},
         'bar': {'color': "darkblue"},
@@ -42,3 +42,4 @@ st.subheader("📈 Revenue Growth Summary:")
 st.write(f"**Current Monthly Revenue:** ${current_revenue:,.2f}")
 st.write(f"**Projected Monthly Revenue:** ${new_revenue:,.2f}")
 st.write(f"**Revenue Increase:** {revenue_increase_pct:.1f}% 🚀")
+
