@@ -42,4 +42,3 @@ st.subheader("📈 Revenue Growth Summary:")
 st.write(f"**Current Monthly Revenue:** ${current_revenue:,.2f}")
 st.write(f"**Projected Monthly Revenue:** ${new_revenue:,.2f}")
 st.write(f"**Revenue Increase:** {revenue_increase_pct:.1f}% 🚀")
-
