@@ -49,6 +49,8 @@ total_projected_revenue = ad_grant_revenue + total_paid_ads_revenue
 total_growth_pct = ((total_projected_revenue) / current_revenue * 100) if current_revenue else 0
 total_traffic_increase_pct = ((ad_grant_traffic - current_traffic) / current_traffic * 100) if current_traffic else 0
 
+total_lifetime_acquired_donors = ad_grant_retained_donors + lifetime_retained_donors
+
 fig = go.Figure()
 
 fig.add_trace(go.Indicator(
@@ -88,4 +90,5 @@ st.markdown(f"""
 | **🎉 Total Projected Revenue**               | **`${total_projected_revenue:,.2f}`**    |
 | **📊 Revenue Increase**                      | **`{total_growth_pct:.1f}% 🚀`**         |
 | **📈 Traffic Increase**                      | **`{total_traffic_increase_pct:.1f}% 📊`** |
+| **🧑‍🤝‍🧑 Total Lifetime Acquired Donors**  | **`{total_lifetime_acquired_donors:,.0f}`** |
 """)
