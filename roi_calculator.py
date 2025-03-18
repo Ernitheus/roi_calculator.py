@@ -43,7 +43,7 @@ ad_grant_traffic = current_traffic * (1 + ad_grant_traffic_pct / 100)
 current_revenue = (current_traffic * (current_conversion_rate / 100) * avg_donation) * multiplier
 ad_grant_revenue = (ad_grant_traffic * (ad_grant_conversion_rate / 100) * avg_donation) * multiplier
 
-# Paid Ads Revenue
+# Paid Ads Revenue Calculations
 estimated_clicks = paid_ads_budget / avg_cpc
 new_paid_donors = estimated_clicks * (paid_ads_conversion_rate / 100)
 immediate_paid_ads_revenue = new_paid_donors * paid_avg_donation * multiplier
